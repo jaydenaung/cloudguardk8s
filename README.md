@@ -3,7 +3,16 @@
 
 This is a really simple scirpt which automates onboarding your Kubernetes cluster to CloudGuard CSPM (Dome9). The script requires that you already have access to a CloudGuard CSPM account, have installed kubectl and python 3.x., and obtained CloudGuard API Key and Secret.
 
-Just run the script, and it'll ask for necessary information (e.g. cluster name) to onboard the cluster. 
+#Python
+Just run the script, and it'll ask for necessary information (e.g. cluster name) to onboard the cluster to CloudGuard
+
+For example. "python ./onboardk8s.py"
+
+#Bash shell
+
+Just run the shell script, and it'll ask for necessary information (e.g. cluster name to onboard the cluster to CloudGuard.
+
+For example, "./onboardk8s_sh.sh"
 
 If you don't have a cloudguard CSPM account yet, register at https://secure.dome9.com/v2 for a free trial account today!
 ---------------
