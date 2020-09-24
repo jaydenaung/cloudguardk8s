@@ -4,7 +4,7 @@ read -p "Enter Your Cluster Name: " cluster_name
 read -p "Enter Namespace: " namespace
 read -p "Enter CloudGuard API Key: " api_key
 read -p "Enter CloudGuard API Secret: " secret
-read -p "Enter Cluster ID (From Cloudguard Web Console): " cluster_id
+read -p "Enter Cluster ID (You should get it from Cloudguard Web Console): " cluster_id
 
 echo "Hello, CloudGuarder! We are onboarding $cluster_name to CloudGuard. Give us a moment."
 
