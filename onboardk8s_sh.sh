@@ -6,7 +6,7 @@ read -p "Enter CloudGuard API Key: " api_key
 read -p "Enter CloudGuard API Secret: " secret
 read -p "Enter Cluster ID (From Cloudguard Web Console): " cluster_id
 
-echo "We are onboarding $cluster_name to CloudGuard."
+echo "Hello, CloudGuarder! We are onboarding $cluster_name to CloudGuard. Give us a moment."
 
 echo "Creating namespace.."
 kubectl create namespace $namespace
@@ -25,4 +25,4 @@ kubectl create clusterrolebinding cp-resource-management --clusterrole=cp-resour
 echo "Deploying CloudGuard agent.."
 kubectl create -f https://secure.dome9.com/v2/assets/files/cp-resource-management.yaml --namespace $namespace
 
-echo "$cluster_name has been succcessfuly onboarded to CloudGuard!"
+echo "Well done, Cloudguarder! $cluster_name has been succcessfuly onboarded to CloudGuard!"
