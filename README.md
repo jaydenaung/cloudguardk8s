@@ -5,17 +5,30 @@ This is a really simple scirpt which automates onboarding your Kubernetes cluste
 
 Python
 ---
-Just run the script, and it'll ask for necessary information to onboard the cluster to CloudGuard. 
+Just run the script, and it'll ask for necessary information to onboard/remove the cluster to CloudGuard. 
 
-For example. "python ./onboardk8s.py"
+For example:
 
-You'll need to provide;
+```bash
+# Install requirements
+pip3 install -r requirements.txt
+# Execute script
+python3 onboardk8s.py onboard
+python  onboardk8s.py remove
+```
+
+For cluster onboarding you will need to provide:
 
 1. Your Cluster Name (e.g. my_cluster)
-2. namespace (e.g. checkpoint)
-3. CloudGuard API Key
-4. CloudGUard API Secret
-5. Cluster ID (Which you will get from CloudGuard Web console. I'll improve the code so that you won't need to get it manually.)
+2. Namespace (e.g. checkpoint)
+3. CloudGuard API Key (you can export environment variable CHKP_CLOUDGUARD_ID and script will detect it)
+4. CloudGUard API Secret (you can export environment variable CHKP_CLOUDGUARD_SECRET and script will detect it)
+
+For cluster removal you will need to provide:
+
+1. The path to the yaml file that was generated during onboarding. Script will try to find a yaml file in current directory
+2. CloudGuard API Key (you can export environment variable CHKP_CLOUDGUARD_ID and script will detect it)
+3. CloudGUard API Secret (you can export environment variable CHKP_CLOUDGUARD_SECRET and script will detect it)
 
 
 Bash shell
