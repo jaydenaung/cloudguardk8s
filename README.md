@@ -14,29 +14,31 @@ Just run the shell script, and it'll ask for necessary information (e.g. cluster
 
 For example, "./onboardk8s_sh.sh"
 
+Sample Output
+----
 
-$ ./onboardk8s_sh.sh 
-Enter Your Cluster Name: cloudguarder1
-Enter Namespace: checkpoint
-Enter CloudGuard API Key: [YOUR CLOUDGUARD API KEY]
-Enter CloudGuard API Secret: [YOUR CLOUDGUARD API SECRET]
-your CloudGuard cluster ID is [YOUR CLOUDGUARD ID]
-Hello, CloudGuarder! We are onboarding cloudguarder1 to CloudGuard. Give us a moment.
-Creating namespace..
-namespace/checkpoint created
-Creating CloudGuard Token..
-secret/dome9-creds created
-Configuration map..
-configmap/cp-resource-management-configmap created
-Finalising onboarding..
-serviceaccount/cp-resource-management created
-clusterrole.rbac.authorization.k8s.io/cp-resource-management created
+$ ./onboardk8s_sh.sh \
+Enter Your Cluster Name: cloudguarder1 \
+Enter Namespace: checkpoint \
+Enter CloudGuard API Key: [YOUR CLOUDGUARD API KEY] \
+Enter CloudGuard API Secret: [YOUR CLOUDGUARD API SECRET] \
+your CloudGuard cluster ID is [YOUR CLOUDGUARD ID] \
+Hello, CloudGuarder! We are onboarding cloudguarder1 to CloudGuard. Give us a moment. \
+Creating namespace.. \
+namespace/checkpoint created \
+Creating CloudGuard Token.. \
+secret/dome9-creds created \
+Configuration map.. \
+configmap/cp-resource-management-configmap created \
+Finalising onboarding.. \
+serviceaccount/cp-resource-management created \
+clusterrole.rbac.authorization.k8s.io/cp-resource-management created \
 clusterrolebinding.rbac.authorization.k8s.io/cp-resource-management created
-Deploying CloudGuard agent..
-deployment.apps/cp-resource-management created
+Deploying CloudGuard agent.. \
+deployment.apps/cp-resource-management created \ 
 Well done, Cloudguarder! cloudguarder1 has been succcessfuly onboarded to CloudGuard!
 
 If you don't have a cloudguard CSPM account yet, register at https://secure.dome9.com/v2 for a free trial account today!
----------------
+----
 
 
