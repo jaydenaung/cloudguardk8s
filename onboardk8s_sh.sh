@@ -31,4 +31,4 @@ kubectl create clusterrolebinding cp-resource-management --clusterrole=cp-resour
 echo "Deploying CloudGuard agent.."
 kubectl create -f https://secure.dome9.com/v2/assets/files/cp-resource-management.yaml --namespace $namespace
 
-echo "Well done, Cloudguarder! $cluster_name has been succcessfuly onboarded to CloudGuard!"
+echo "Awesome, Cloudguarder! $cluster_name has been succcessfuly onboarded to CloudGuard!"
