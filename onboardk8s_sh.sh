@@ -4,7 +4,13 @@ read -p "Enter Your Cluster Name: " cluster_name
 read -p "Enter Namespace: " namespace
 read -p "Enter CloudGuard API Key: " api_key
 read -p "Enter CloudGuard API Secret: " secret
-read -p "Enter Cluster ID (You should get it from Cloudguard Web Console): " cluster_id
+
+dome9ApiUrl="https://api.dome9.com"
+
+CREATION_RESPONSE=$(curl -s -X POST $dome9ApiUrl/v2/KubernetesAccount --header 'Content-Type: application/json' --header 'Accept: application/json' \
+-d "{\"name\" : \"$cluster_name\"}" --user $api_key:$secret)
+export cluster_id=$(echo $CREATION_RESPONSE | jq -r '.id')
+echo "your CloudGuard cluster ID is $cluster_id"
 
 echo "Hello, CloudGuarder! We are onboarding $cluster_name to CloudGuard. Give us a moment."
 
