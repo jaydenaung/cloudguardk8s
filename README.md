@@ -15,6 +15,7 @@ You'll need to provide;
 2. namespace (e.g. checkpoint)
 3. CloudGuard API Key
 4. CloudGUard API Secret
+5. Cluster ID (Which you will get from CloudGuard Web console. I'll improve the code so that you won't need to get it manually.)
 
 
 Bash shell
