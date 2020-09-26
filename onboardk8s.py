@@ -1,6 +1,6 @@
 # *******************************************************************************
 # CloudGuard CSPM (Dome9) Kubernetes Onboarding Helper
-# Author: Jayden Kyaw Htet Aung and Ivan Martinez | Check Point SW Technologies
+# Authors: Jayden Kyaw Htet Aung and Ivan Martinez | Check Point SW Technologies
 # See LICENSE and README files
 # *******************************************************************************
 
