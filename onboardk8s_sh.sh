@@ -1,5 +1,13 @@
 #!/bin/bash
 
+# ****************************************************
+# CloudGuard CSPM (Dome9) Kubernetes Onboarding Helper
+# Author: Jayden Kyaw Htet Aung | Check Point SW Technologies
+# See LICENSE and README files
+# ****************************************************
+
+
+
 read -p "Enter Your Cluster Name: " cluster_name
 read -p "Enter Namespace: " namespace
 read -p "Enter CloudGuard API Key: " api_key
