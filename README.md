@@ -71,5 +71,5 @@ Well done, Cloudguarder! cloudguarder1 has been succcessfuly onboarded to CloudG
 
 If you don't have a cloudguard CSPM account yet, register at https://secure.dome9.com/v2 for a free trial account today!
 ----
-
+ ![header image](cloudguard.png)
 
