@@ -47,7 +47,7 @@ You'll need to provide;
 
 Sample Output
 ----
-
+```bash
 $ ./onboardk8s_sh.sh \
 Enter Your Cluster Name: cloudguarder1 \
 Enter Namespace: checkpoint \
@@ -68,6 +68,7 @@ clusterrolebinding.rbac.authorization.k8s.io/cp-resource-management created
 Deploying CloudGuard agent.. \
 deployment.apps/cp-resource-management created \ 
 Well done, Cloudguarder! cloudguarder1 has been succcessfuly onboarded to CloudGuard!
+```
 
 If you don't have a cloudguard CSPM account yet, register at https://secure.dome9.com/v2 for a free trial account today!
 ----
