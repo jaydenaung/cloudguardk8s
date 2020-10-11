@@ -1,4 +1,4 @@
-# Python and Shell script to onboard Kubernetes Custers to CloudGuard CSPM \
+# Python and Shell script to onboard Kubernetes Custers to CloudGuard CSPM 
 ***(non-Helm simple installation)***
 ----------------
 
