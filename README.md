@@ -1,7 +1,8 @@
-#cloudguardk8s
+#Python and Shell script to onboard Kubernetes Custers to CloudGuard CSPM \
+***(non-Helm simple installation)***
 ----------------
 
-This is a really simple scirpt which automates onboarding your Kubernetes cluster to CloudGuard CSPM (Dome9) - just another anternative to using Helm. I've created both Python and Bashshell scripts that basically do the same thing. Either script requires that you already have access to a CloudGuard CSPM account, have installed kubectl and obtained CloudGuard API Key and Secret. Of course Python verstion of the script requires that you've installed Python 3.x. You just need to run either one.
+This is a really simple script that automates onboarding your Kubernetes cluster to CloudGuard CSPM (Dome9).   I've created both Python and shell scripts that do the same thing. Either script requires that you already have access to a CloudGuard CSPM account, have installed kubectl and obtained CloudGuard API Key and Secret. Of course, Python version of the script requires that you've installed Python 3.x. You just need to run either one.
 
 Python
 ---
@@ -26,7 +27,7 @@ For cluster onboarding you will need to provide:
 
 For cluster removal you will need to provide:
 
-1. The path to the yaml file that was generated during onboarding. Script will try to find a yaml file in current directory
+1. The path to the yaml file that was generated during onboarding. The script will try to find a yaml file in the current directory
 2. CloudGuard API Key (you can export environment variable CHKP_CLOUDGUARD_ID and script will detect it)
 3. CloudGUard API Secret (you can export environment variable CHKP_CLOUDGUARD_SECRET and script will detect it)
 
@@ -67,7 +68,7 @@ clusterrole.rbac.authorization.k8s.io/cp-resource-management created \
 clusterrolebinding.rbac.authorization.k8s.io/cp-resource-management created
 Deploying CloudGuard agent.. \
 deployment.apps/cp-resource-management created \ 
-Well done, Cloudguarder! cloudguarder1 has been succcessfuly onboarded to CloudGuard!
+Well done, Cloudguarder! cloudguarder1 has been successfully onboarded to CloudGuard!
 ```
 
 If you don't have a cloudguard CSPM account yet, register at https://secure.dome9.com/v2 for a free trial account today!

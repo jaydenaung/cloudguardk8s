@@ -31,7 +31,7 @@ kubectl create secret generic dome9-creds --from-literal=username=$api_key --fro
 echo "Configuration map.."
 kubectl create configmap cp-resource-management-configmap --from-literal=cluster.id=$cluster_id --namespace $namespace
 
-echo "Finalising onboarding.."
+echo "Finalizing onboarding.."
 kubectl create serviceaccount cp-resource-management  --namespace $namespace
 kubectl create clusterrole cp-resource-management --verb=get,list --resource=pods,nodes,services,nodes/proxy,networkpolicies.networking.k8s.io,ingresses.extensions,podsecuritypolicies.policy,roles,rolebindings,clusterroles,clusterrolebindings,serviceaccounts,namespaces
 kubectl create clusterrolebinding cp-resource-management --clusterrole=cp-resource-management --serviceaccount=checkpoint:cp-resource-management
@@ -39,4 +39,4 @@ kubectl create clusterrolebinding cp-resource-management --clusterrole=cp-resour
 echo "Deploying CloudGuard agent.."
 kubectl create -f https://secure.dome9.com/v2/assets/files/cp-resource-management.yaml --namespace $namespace
 
-echo "Awesome, Cloudguarder! $cluster_name has been succcessfuly onboarded to CloudGuard!"
+echo "Awesome, Cloudguarder! $cluster_name has been succcessfully onboarded to CloudGuard!"
